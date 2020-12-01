@@ -134,9 +134,14 @@ function editDestination(event) {
   
   let newTitle = prompt("Enter destination name");
   let newLoc = prompt("Enter location");
-  let newURL = getNewURL();
+  
+  //check if user wants to add new url
+  if (confirm("Would you like to add a new image url?")) {
+    let newURL = getNewURL();
+    photoURL.setAttribute("src", newURL);
+  }
 
-  photoURL.setAttribute("src", newURL);
+  
   title.innerText = newTitle;
   loc.innerText = newLoc;
 }
