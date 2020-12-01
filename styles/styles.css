@@ -1,0 +1,22 @@
+/* header */
+#header {
+  text-align: center;
+}
+
+
+/* form and display */
+#display-title {
+  text-align: center;
+}
+
+#destinations-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* edit and remove buttons on wishlist */
+#button-spacing {
+  display: flex;
+  justify-content: space-between;
+}
